@@ -15,5 +15,5 @@ def ada():
     print(full_name_upper)  # ADA LOVELACE
     
     # d) Generar un espacio antes de escribir todas las letras en minúsculas:
-    spaced_full_name_lower = "    " + first_name.lower() + " " + last_name.lower()
+    spaced_full_name_lower = "\t" + first_name.lower() + " " + last_name.lower()
     print(spaced_full_name_lower)  #     ada lovelace
