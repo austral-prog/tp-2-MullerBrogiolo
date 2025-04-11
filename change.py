@@ -1,17 +1,21 @@
 def change():
     expense = 23.75
     money = 100
-    # Defino las variables: 
 
-    X = "Bangladesh"
-    Y = "Barbados"
+ # Solicito los datos al usuario
+    costo = float(input("Me sale "))
+    pago = float(input("Le entregué "))
 
-# Defino las variables:
+# Calculo el vuelto total
+    vuelto = pago - costo
 
-    X_esta_antes = (X<Y)
-    Y_esta_antes = (Y<X)
+# Separo en pesos y centavos
+    pesos = int(vuelto)
+    centavos = int(round((vuelto - pesos) * 100))
 
-# Printeo los textos ya relacionados con las variables:
-
-    print(f"The result of {X} comes first in the dictionary than {Y} is {X_esta_antes}.")
-    print(f"The result of {Y} comes first in the dictionary than {X} is {Y_esta_antes}.")
+# Imprimo la respuesta:
+    print("Me deben dar de vuelto:")
+    print("Pesos:")
+    print(pesos)
+    print("Centavos:")
+    print(centavos)
